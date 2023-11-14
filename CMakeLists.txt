@@ -82,6 +82,7 @@ set(LIBRARY_SRCS
   libraries/BluetoothSerial/src/BTScanResultsSet.cpp
   libraries/DNSServer/src/DNSServer.cpp
   libraries/EEPROM/src/EEPROM.cpp
+  libraries/ESP_FlexyStepper/src/ESP_FlexyStepper.cpp
   libraries/ESP_I2S/src/ESP_I2S.cpp
   libraries/ESP_SR/src/ESP_SR.cpp
   libraries/ESP_SR/src/esp32-hal-sr.c
@@ -181,6 +182,7 @@ set(includedirs
   libraries/BluetoothSerial/src
   libraries/DNSServer/src
   libraries/EEPROM/src
+  libraries/ESP_FlexyStepper/src
   libraries/ESP_I2S/src
   libraries/ESP_SR/src
   libraries/ESP32/src
