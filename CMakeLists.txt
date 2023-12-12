@@ -94,6 +94,7 @@ set(LIBRARY_SRCS
   libraries/HTTPClient/src/HTTPClient.cpp
   libraries/HTTPUpdate/src/HTTPUpdate.cpp
   libraries/LittleFS/src/LittleFS.cpp
+  libraries/HX711/HX711.cpp
   libraries/MAX6675_library/max6675.cpp
   libraries/Insights/src/Insights.cpp
   libraries/NetBIOS/src/NetBIOS.cpp
@@ -195,6 +196,7 @@ set(includedirs
   libraries/HTTPUpdate/src
   libraries/LittleFS/src
   libraries/MAX6675_library
+  libraries/HX711
   libraries/Insights/src
   libraries/NetBIOS/src
   libraries/Preferences/src
