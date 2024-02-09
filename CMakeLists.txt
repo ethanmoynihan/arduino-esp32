@@ -74,7 +74,11 @@ set(CORE_SRCS
   )
 
 set(LIBRARY_SRCS
+  libraries/Adafruit_BusIO/Adafruit_BusIO_Register.cpp
+  libraries/Adafruit_BusIO/Adafruit_I2CDevice.cpp
+  libraries/Adafruit_BusIO/Adafruit_SPIDevice.cpp
   libraries/Adafruit-MCP23017/src/Adafruit_MCP23X17.cpp
+  libraries/Adafruit-MCP23017/src/Adafruit_MCP23XXX.cpp
   libraries/ArduinoOTA/src/ArduinoOTA.cpp
   libraries/AsyncUDP/src/AsyncUDP.cpp
   libraries/BluetoothSerial/src/BluetoothSerial.cpp
