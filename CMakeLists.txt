@@ -74,6 +74,7 @@ set(CORE_SRCS
   )
 
 set(LIBRARY_SRCS
+  libraries/Adafruit-MCP23017/src/Adafruit_MCP23X17.cpp
   libraries/ArduinoOTA/src/ArduinoOTA.cpp
   libraries/AsyncUDP/src/AsyncUDP.cpp
   libraries/BluetoothSerial/src/BluetoothSerial.cpp
@@ -178,6 +179,8 @@ set(BLE_SRCS
 set(includedirs
   variants/${CONFIG_ARDUINO_VARIANT}/
   cores/esp32/
+  libraries/Adafruit_BusIO
+  libraries/Adafruit-MCP23017/src
   libraries/ArduinoOTA/src
   libraries/AsyncUDP/src
   libraries/BLE/src
