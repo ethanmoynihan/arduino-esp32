@@ -74,6 +74,9 @@ set(CORE_SRCS
   )
 
 set(LIBRARY_SRCS
+
+  libraries/AccelStepper/src/AccelStepper.cpp
+  libraries/AccelStepper/src/MultiStepper.cpp
   libraries/Adafruit_BusIO/Adafruit_BusIO_Register.cpp
   libraries/Adafruit_BusIO/Adafruit_I2CDevice.cpp
   libraries/Adafruit_BusIO/Adafruit_SPIDevice.cpp
@@ -183,6 +186,7 @@ set(BLE_SRCS
 set(includedirs
   variants/${CONFIG_ARDUINO_VARIANT}/
   cores/esp32/
+  libraries/AccelStepper/src
   libraries/Adafruit_BusIO
   libraries/Adafruit-MCP23017/src
   libraries/ArduinoOTA/src
