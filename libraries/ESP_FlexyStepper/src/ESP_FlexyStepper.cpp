@@ -128,7 +128,7 @@ void ESP_FlexyStepper::taskRunner(void *parameter)
   for (;;)
   {
     stepperRef->processMovement();
-    // vTaskDelay(1); // This would be a working solution to prevent the WDT to fire (if not disabled, yet it will cause noticeably less smooth stepper movements / lower frequencies)
+    //vTaskDelay(1); // This would be a working solution to prevent the WDT to fire (if not disabled, yet it will cause noticeably less smooth stepper movements / lower frequencies)
   }
 }
 
@@ -756,7 +756,6 @@ void ESP_FlexyStepper::setSpeedInStepsPerSecond(float speedInStepsPerSecond)
   desiredSpeed_InStepsPerSecond = speedInStepsPerSecond;
   desiredPeriod_InUSPerStep = 1000000.0 / desiredSpeed_InStepsPerSecond;
 }
-
 //
 // set the rate of acceleration, units in steps/second/second
 //  Enter:  accelerationInStepsPerSecondPerSecond = rate of acceleration, units in
